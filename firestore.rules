@@ -1,0 +1,14 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /audits/{auditId} {
+      allow read: if resource.data.publicShare == true;
+      allow write: if false;
+    }
+
+    match /leads/{leadId} {
+      allow read, write: if false;
+    }
+  }
+}
