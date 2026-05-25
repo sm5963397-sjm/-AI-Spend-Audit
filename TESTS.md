@@ -109,3 +109,9 @@ expect(audit.thresholdMessage).toContain("spending well");
 | Performance | No third-party scripts block the first interaction. |
 | Secrets | `.env.local` is ignored and `.env.example` has no real keys. |
 | Share URL | `/a/[auditId]` route exists before Firestore read implementation. |
+
+## Additional Validation Test
+
+| Filename | What it covers | How to run |
+| --- | --- | --- |
+| `tests/audit-engine/request-schema.test.ts` | Rejects malformed lead emails and invalid audit save payloads before Firestore, Resend, or Anthropic are called. | `npm run test` |
