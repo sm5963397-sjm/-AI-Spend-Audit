@@ -36,6 +36,7 @@ flowchart TD
 | Email | `lib/email/resend.ts` | Sends the share URL and short summary via Resend when `RESEND_API_KEY` exists. |
 | Firestore | `lib/firebase/server.ts` | Stores audit snapshots and lead records using Firebase Admin credentials from env. |
 | Share route | `app/a/[auditId]/page.tsx` | Public report path reserved for saved audit snapshots. |
+| Social previews | `app/opengraph-image.tsx`, `app/twitter-image.tsx` | Generated 1200x630 preview cards for screenshot-friendly public links. |
 | CI | `.github/workflows/ci.yml` | Runs install, lint, typecheck, unit tests, and build on `main`. |
 
 ## Stack Choice
