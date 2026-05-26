@@ -12,17 +12,17 @@
 
 **Plan for tomorrow:** Run the app end to end, tighten public share pages, fill the first real interview, and commit changes with a conventional commit message.
 
-## Day 2 — YYYY-MM-DD
+## Day 2 — 2026-05-26
 
-**Hours worked:** 
+**Hours worked:** 0.5
 
-**What I did:** 
+**What I did:** Added a boundary test for the Credex CTA threshold so exactly $500/month in savings stays in the benchmark-report path instead of incorrectly triggering a consultation.
 
-**What I learned:** 
+**What I learned:** The assignment wording says Credex should be prominent when savings are greater than $500/month, so the exact boundary matters and deserves its own test.
 
-**Blockers / what I'm stuck on:** 
+**Blockers / what I'm stuck on:** The deadline is close, and the git-history requirement cannot be fully solved because the project started late; the honest best path is still to keep making real daily commits.
 
-**Plan for tomorrow:** 
+**Plan for tomorrow:** Add one more real improvement, run checks, push it, and update Day 3 with what actually changed.
 
 ## Day 3 — YYYY-MM-DD
 

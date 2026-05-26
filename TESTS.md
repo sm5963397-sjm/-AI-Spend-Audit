@@ -51,6 +51,7 @@ Cases:
 | Savings | Expected CTA |
 | ---: | --- |
 | `$501+` | `credex_consultation` |
+| `$500 exactly` | `benchmark_report` |
 | `$100-$500` | `benchmark_report` |
 | `<$100` | `optimization_gate` |
 
