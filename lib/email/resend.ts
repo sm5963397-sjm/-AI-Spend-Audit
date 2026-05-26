@@ -20,7 +20,7 @@ export async function sendAuditEmail({
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   return resend.emails.send({
-    from: process.env.AUDIT_FROM_EMAIL ?? "Credex AI Spend Audit <audits@example.com>",
+    from: process.env.AUDIT_FROM_EMAIL ?? "SpendPilot AI <audits@example.com>",
     to,
     subject:
       totalMonthlySavings > 500

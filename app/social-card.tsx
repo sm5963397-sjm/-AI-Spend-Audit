@@ -24,7 +24,7 @@ export function SocialCard() {
             textTransform: "uppercase"
           }}
         >
-          Credex AI Spend Audit
+          SpendPilot AI
         </div>
         <div
           style={{
@@ -36,7 +36,7 @@ export function SocialCard() {
             maxWidth: 940
           }}
         >
-          Stop renewing wasteful AI seats.
+          Your AI Stack Is Probably Overpriced.
         </div>
         <div
           style={{

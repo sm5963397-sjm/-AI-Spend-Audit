@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222 47% 11%;
-  --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
-  --primary: 170 84% 30%;
+  --background: 225 49% 8%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 98%;
+  --primary: 217 91% 60%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 38 92% 55%;
-  --secondary-foreground: 222 47% 11%;
-  --muted: 210 32% 94%;
-  --muted-foreground: 215 16% 38%;
-  --accent: 198 74% 45%;
+  --secondary: 251 91% 65%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 221 39% 16%;
+  --muted-foreground: 218 11% 65%;
+  --accent: 160 84% 39%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 72% 51%;
   --destructive-foreground: 0 0% 100%;
-  --border: 214 32% 88%;
-  --input: 214 32% 88%;
-  --ring: 170 84% 30%;
+  --border: 0 0% 100%;
+  --input: 0 0% 100%;
+  --ring: 217 91% 60%;
   --radius: 0.5rem;
 }
 
@@ -29,10 +29,16 @@
 
 body {
   min-height: 100vh;
-  background:
-    linear-gradient(180deg, rgba(240, 253, 250, 0.92), rgba(255, 255, 255, 1) 34rem),
-    hsl(var(--background));
+  background: #0b1020;
   color: hsl(var(--foreground));
+  font-family: Inter, Geist, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 button,
@@ -40,4 +46,70 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.45);
+  color: #f9fafb;
+}
+
+.premium-shell {
+  background:
+    radial-gradient(circle at 20% 8%, rgba(59, 130, 246, 0.28), transparent 28rem),
+    radial-gradient(circle at 80% 12%, rgba(139, 92, 246, 0.24), transparent 30rem),
+    linear-gradient(180deg, #0b1020 0%, #0b1020 48%, #090d18 100%);
+}
+
+.aurora-field {
+  background:
+    linear-gradient(115deg, rgba(59, 130, 246, 0.18), transparent 38%),
+    linear-gradient(245deg, rgba(16, 185, 129, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+  filter: blur(0.2px);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(20px);
+}
+
+.premium-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #f9fafb 0%, #bfdbfe 45%, #a7f3d0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 640px) {
+  .premium-shell {
+    max-width: 100vw;
+  }
+
+  .premium-shell section,
+  .premium-shell main,
+  .premium-shell header,
+  .premium-shell nav {
+    max-width: 100vw;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

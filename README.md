@@ -1,6 +1,6 @@
-# Credex AI Spend Audit
+# SpendPilot AI
 
-Credex AI Spend Audit is a free lead-generation web app for startup founders and engineering managers who need to check whether their AI tooling spend is rational before renewal. Users enter AI tools, plans, monthly spend, seats, team size, and use case, then get deterministic savings math, a shareable report URL, and a Credex CTA only when the savings justify it.
+SpendPilot AI is a free lead-generation web app for startup founders and engineering managers who need to check whether their AI tooling spend is rational before renewal. Users enter AI tools, plans, monthly spend, seats, team size, and use case, then get deterministic savings math, a shareable report URL, and a Credex CTA only when the savings justify it.
 
 Local preview: [http://localhost:3000](http://localhost:3000)  
 Deployed URL: [https://you-are-an-expert-full-stack-omega.vercel.app](https://you-are-an-expert-full-stack-omega.vercel.app)
@@ -8,6 +8,7 @@ Deployed URL: [https://you-are-an-expert-full-stack-omega.vercel.app](https://yo
 ## Screenshots
 
 ![Audit input and hero](docs/screenshots/audit-home.png)
+![Mobile audit experience](docs/screenshots/audit-mobile.png)
 ![Savings result and lead capture](docs/screenshots/audit-results.png)
 ![Public share URL](docs/screenshots/share-page.png)
 
@@ -37,7 +38,7 @@ FIREBASE_PRIVATE_KEY=
 
 ANTHROPIC_API_KEY=
 RESEND_API_KEY=
-AUDIT_FROM_EMAIL=Credex AI Spend Audit <audits@example.com>
+AUDIT_FROM_EMAIL=SpendPilot AI <audits@example.com>
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 

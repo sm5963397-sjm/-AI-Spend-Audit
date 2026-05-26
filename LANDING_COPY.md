@@ -2,7 +2,7 @@
 
 ## Hero
 
-Headline: Stop renewing wasteful AI seats.
+Headline: Stop Overpaying for AI Tools.
 
 Subheadline: Audit AI plans, API spend, and seat overlap before another renewal hits your runway.
 

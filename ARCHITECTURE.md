@@ -2,7 +2,7 @@
 
 ## Product Goal
 
-Credex AI Spend Audit is a lightweight lead-generation product that gives a founder or engineering manager a credible answer in under two minutes: "Are we overspending on AI seats, plans, or API usage?" The app deliberately separates deterministic financial math from AI-generated prose. All savings, thresholds, downgrade logic, and plan comparisons are hardcoded in the audit engine. The Anthropic call only turns those already-computed results into a concise summary.
+SpendPilot AI is a lightweight lead-generation product that gives a founder or engineering manager a credible answer in under two minutes: "Are we overspending on AI seats, plans, or API usage?" The app deliberately separates deterministic financial math from AI-generated prose. All savings, thresholds, downgrade logic, and plan comparisons are hardcoded in the audit engine. The Anthropic call only turns those already-computed results into a concise summary.
 
 ## System Diagram
 

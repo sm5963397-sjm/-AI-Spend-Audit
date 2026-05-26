@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SocialCard } from "./social-card";
 
-export const alt = "Credex AI Spend Audit";
+export const alt = "SpendPilot AI";
 export const contentType = "image/png";
 export const runtime = "edge";
 export const size = {
